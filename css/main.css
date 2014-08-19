@@ -12,7 +12,13 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	top:-17px;
 	z-index:0;
 }
- 
+.sideSliderParent > .maintainHover {
+	background-color: #0081C2;
+	color: white !important;
+}
+.sideSliderParent > .maintainHover span {
+	border-color: transparent !important;
+}
 body {line-height: 1;}
  
 ol, ul {list-style: none;}
