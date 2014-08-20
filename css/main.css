@@ -3112,6 +3112,9 @@ a#logo:hover,#footer .logo:hover {
  }
  
 #eugin-booking-search-header {
+	left: 0;
+	right: 0;
+	margin: auto;
 	position: absolute;
 	top: 70px;
 	width: 940px;
