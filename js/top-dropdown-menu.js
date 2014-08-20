@@ -3,8 +3,8 @@
 
 $(document).ready(function(){
      $('.sideSlider.popover').css('min-height',$('.sideSlider.popover').closest('.dropdown-panel').height());
-$('.dropdown-container').on('click',function(){
-        console.log('zauzano');
+$('.dropdown-container').on('click',function (e){
+        e.preventDefault();
         var panel = $(this).children('.dropdown-panel');
         var isShow = true;
         if(isShow = (!panel.hasClass('showing'))){
