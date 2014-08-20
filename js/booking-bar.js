@@ -152,6 +152,7 @@ var fieldsVisibilityControl = function() {
 		// tap for iPhone
 		.on('tap',".eugin-booking-dropdown-container", function(e){
 			e.stopImmediatePropagation();
+            hidePanels();
 		})
 		.on('tap',".eugin-calendar", function(e){
 			e.stopImmediatePropagation();

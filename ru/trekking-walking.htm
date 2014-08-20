@@ -33,11 +33,10 @@ include_once('../a_booking_scripts.php');
 
 
 <link rel="stylesheet" type="text/css" href="../js/highslide/highslide.css">
-
-
+<link rel="stylesheet" href="../css/slider.css" />
 
 <link rel="stylesheet" type="text/css" href="../css/main.css" media="all">
-<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+
 <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 <link rel="publisher" href="https://plus.google.com/u/0/b/107251312414434401973/107251312414434401973">
@@ -45,19 +44,7 @@ include_once('../a_booking_scripts.php');
 
 </head>
 <body id="itineraries" class="b-search">
-  <!-- <div class="popup">
-    <div class="popup-wrapper">
-      <h4>Отправка сообщения</h4>
-      <a href="" class="exit"></a>
-      <form action="" class="send-mail">
-        <label for="url">URL Новости</label><input readonly type="text" id="url"/>
-        <label for="error">Ошибка</label><textarea id="error" cols="30" rows="10"></textarea></form>
-      <div class="popup-footer">
-        <button>отправить</button>
-        <a href="">Отменить</a>
-      </div>
-    </div>
-  </div> -->
+  <!-- popup -->
   <div class="popup">
   <div id="box-mistaker" class="g-popup" style="display: block;">
   <a href="#" id="close-popup" class="g-popup__close js-popup_close"><i class="g-popup__close__inner"></i></a>
@@ -67,9 +54,9 @@ include_once('../a_booking_scripts.php');
     <div class="g-popup__desc g-popup__desc_messagebox g-popup__desc_messagebox-error g-popup__mode-switcer__show-on-error">Ошибка при отправлении.</div>
 
     <div class="g-popup__box g-popup__mode-switcer__hide-on-success">
-      <input type="hidden" value="send" name="action">
+      <!-- <input type="hidden" value="send" name="action">
       <input type="hidden" name="project_name" value="sport">
-      <input type="hidden" name="token" value="">
+      <input type="hidden" name="token" value=""> -->
       <div class="g-popup__desc">
         <div class="g-form__row">
           <div class="g-form__row__label g-form__row__label_popup">
@@ -92,7 +79,7 @@ include_once('../a_booking_scripts.php');
     <div class="g-popup__controls">
       <div class="g-popup__controls__inner g-popup__mode-switcer__hide-on-success">
         <input type="submit" class="g-form__button g-form__button_submit" name="send" value="Отправить">
-        <a href="#" class="g-confirm-cancel g-form__button g-form__button_reset js-popup_close">Отменить</a>
+        <!-- <a href="#" class="g-confirm-cancel g-form__button g-form__button_reset js-popup_close">Отменить</a> -->
       </div>
       <div class="g-popup__controls__inner g-popup__mode-switcer__show-on-success">
         <input type="button" class="g-form__button g-form__button_submit g-popup__mode-switcer__show-on-success js-popup_close" value="Закрыть">
@@ -101,6 +88,13 @@ include_once('../a_booking_scripts.php');
   </form>
 </div>
 </div>
+<!-- popup end -->
+<!-- side block -->
+<div id="slidebox">
+    <a class="close-block" title="Close"></a>
+    <a class="hide-button" href="">Больше не показывать</a>
+</div>
+<!-- side-block ebd -->
 <div id="container" ng-controller="persons">
   <div id="content">
 <p id="urlline">
@@ -581,7 +575,8 @@ On your way back from Ieranto, stop off for an ice-cream at the <strong>Glocal b
             <div class="abstract">
               <h3><a href="/salsa.php?call=sgoto&amp;req=dHlwZT1jYXJkJmxhbmdfaWQ9MSZpZD05MDUmZXZlbnQ9YmFubmVyX2NsaWNrcyZ1cmw9JTJGaXQlMkZjJTJGaG90ZWwtb25kYS12ZXJkZSZoYXNoPTJiOTdlZmQ5MmQyNTNlMWNhODU3ODA0ZDEyYTRjNWFkZDI3OWRmMWM.">Hotel Onda Verde</a></h3>
               <p class="subtitle">Praiano (Salerno)</p>
-              <p class="body">Affacciarsi dalle terrazze scolpite nella scogliera di Praiano, tra Amalfi e Positano, e guardare quel mare limpido che si...</p>
+              <!-- после появляется блок -->
+              <p class="body" id="last">Affacciarsi dalle terrazze scolpite nella scogliera di Praiano, tra Amalfi e Positano, e guardare quel mare limpido che si...</p>
             </div>
 
 
@@ -1608,8 +1603,10 @@ include_once('../q_leftmenu2.php');
   </div>
 
 </footer>
+<script src="../js/copy.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="../js/slider.js"></script>
 <script type="text/javascript" src="../js/aim-menu.js"></script>
-
 <script type="text/javascript" src="../js/highslide/highslide-ru.js"></script>
 <script type="text/javascript" src="../js/tocca.min.js"></script>
 <script type="text/javascript" src="../js/booking-bar.js"></script>
